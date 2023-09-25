@@ -34,15 +34,17 @@ function App() {
                 backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
             }}
         >
-            <div className="w-full flex">
-                <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5  m-4 backdrop-blur-sm bg-white/30">
+            <div className="flex w-full">
+                <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5  m-4 backdrop-blur-sm bg-white/20">
+                    <h1 className='text-center text-xl mb-2 p-2 bg-blue-600 text-white rounded-lg'>Currency Convertor App</h1>
                     <div 
                     className='w-full h-60 rounded-lg bg-cover bg-no-repeat' 
                     style={{ backgroundImage:`url('https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`}}>                    
                     </div>
                 </div>
-                <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5  m-4 backdrop-blur-sm bg-white/30">
+                <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5  m-4 backdrop-blur-sm bg-white/20">
                     <form
+                        className='mt-6'
                         onSubmit={(e) => {
                             e.preventDefault();
                             convert()
@@ -84,6 +86,8 @@ function App() {
                     </form>
                 </div>
             </div>
+
+
         </div>
     )
 }
