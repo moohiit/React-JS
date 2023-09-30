@@ -18,7 +18,7 @@ function Github() {
             <div><img src={data.avatar_url} alt="Git picture" width={300} /></div>
             <div className='text-left p-4 ml-4'>
                 <h1>Name: {data.name}</h1>
-                <p>Linkedin: {data.blog}</p>
+                <p>Website: {data.blog}</p>
                 <p>Location: {data.location}</p>
                 <p>Github Followers: {data.followers + 650}</p>
             </div>
